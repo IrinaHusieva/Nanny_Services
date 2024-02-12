@@ -1,16 +1,14 @@
+import Header from "./header/Header";
+import Hero from "./hero/Hero";
+import css from "./common.module.css";
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <div className={css.container}>
+      <div className={css.backgroundContainer}>
+        <Header />
+        <Hero />
+      </div>
+      </div>
   );
 };

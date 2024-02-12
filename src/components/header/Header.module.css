@@ -1,0 +1,54 @@
+.headerSection {
+  display: flex;
+  font-family: 'Helvetica Neue';
+  padding: 30px 96px;
+  border-bottom: 1px solid rgba(251, 251, 251, 0.4);
+  align-items: center;
+}
+.logo {
+  color: rgb(251, 251, 251);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  text-decoration: none;
+  margin-right: 487px;
+  cursor: pointer;
+}
+.nav {
+  display: flex;
+  gap: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(251, 251, 251);
+  margin-right: 92px;
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+.loginBtn {
+  box-sizing: border-box;
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 39px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  background-color: transparent;
+  color: rgb(251, 251, 251);
+  border-radius: 30px;
+}
+.registrationBtn {
+  background: rgb(240, 63, 59);
+  color: rgb(251, 251, 251);
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 14px 40px;
+  border: none;
+}
