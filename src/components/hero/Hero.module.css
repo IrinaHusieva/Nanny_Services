@@ -1,3 +1,55 @@
 .hero {
   display: flex;
+  margin-top: 163px;
+  padding-left: 96px;
+  gap: 429px;
+}
+.title {
+  color: rgb(251, 251, 251);
+  font-family: Helvetica Neue;
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 70px;
+  margin: 0;
+}
+.colorHalf {
+  width: 517px;
+}
+.imageHalf {
+  margin-top: 317px;
+  width: 284px;
+  height: 118px;
+  border-radius: 20px;
+  background-color: rgb(251, 251, 251);
+}
+.title2 {
+  color: rgb(251, 251, 251);
+  font-family: Helvetica Neue;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 28px;
+  margin-bottom: 64px;
+}
+.heroBtn {
+  position: static;
+  width: 230.83px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 50px 18px 50px;
+  color: rgb(251, 251, 251);
+  font-family: Helvetica Neue;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  box-sizing: border-box;
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  border-radius: 30px;
+  background-color: transparent;
+}
+.heroSvg {
+  margin-left: 18px;
 }
