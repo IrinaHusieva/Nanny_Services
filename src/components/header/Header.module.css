@@ -41,6 +41,7 @@
   background-color: transparent;
   color: rgb(251, 251, 251);
   border-radius: 30px;
+  cursor: pointer;
 }
 .registrationBtn {
   background: rgb(240, 63, 59);
@@ -51,4 +52,5 @@
   line-height: 20px;
   padding: 14px 40px;
   border: none;
+  cursor: pointer;
 }
