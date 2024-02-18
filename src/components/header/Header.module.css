@@ -1,6 +1,5 @@
 .headerSection {
   display: flex;
-  font-family: 'Helvetica Neue';
   padding: 30px 96px;
   border-bottom: 1px solid rgba(251, 251, 251, 0.4);
   align-items: center;
@@ -29,6 +28,8 @@
   gap: 8px;
 }
 .loginBtn {
+  display: flex;
+  width: 126px;
   box-sizing: border-box;
   border: 1px solid rgba(251, 251, 251, 0.4);
   flex-direction: row;

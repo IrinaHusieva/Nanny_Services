@@ -5,11 +5,11 @@ const Header = () => {
     return (
       <section className={css.headerSection}>
             <div>
-                <a className={css.logo} href='#'>Nanny.Services</a>
+                <a href='#' className={css.logo}>Nanny.Services</a>
             </div>
             <nav className={css.nav} >
-                <a>Home</a>
-                <a>Nannies</a>
+                <a href='javascript:void(0)'>Home</a>
+                <a href='javascript:void(0)'>Nannies</a>
             </nav>
             <div className={css.buttons}>
                 <button className={css.loginBtn}>Log In</button>
