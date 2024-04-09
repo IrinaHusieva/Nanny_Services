@@ -29,34 +29,37 @@ const RegistrationModal = () => {
     setSubmitting(false);
   };
 
-  return (
-    <div className={css.modalContainer}>
-      <h2 className={css.title}>
-        Registration
-      </h2>
-      <p className={css.txt}>Thank you for your interest in our platform! In order to register, we need some information. Please provide us with the following information.</p>
-      <Formik
-        initialValues={{ name: '', email: '', password: '' }}
-        validationSchema={validationSchema}
-        onSubmit={handleSubmit}
-      >
-        {({ isSubmitting, setFieldTouched }) => (
-          <Form className={css.form}>
-            <Field type="text" name="name" placeholder="Name" className={css.name} onBlur={() => setFieldTouched('name', true)} />
-            <ErrorMessage name="name" component="div" className={css.error} />
-            <Field type="email" name="email" placeholder="Email" className={css.email} onBlur={() => setFieldTouched('email', true)} />
-            <ErrorMessage name="email" component="div" className={css.error} />
-            <div className={css.passwordContainer}>
-              <Field type={showPassword ? "text" : "password"} name="password" placeholder="Password" className={css.password} onBlur={() => setFieldTouched('password', true)} />
-         <button type="button" onClick={togglePasswordVisibility} className={css.togglePasswordButton}>
-                {showPassword ? <svg><use xlinkHref={`${svg}#eye-off`} /></svg> : <svg><use xlinkHref={`${svg}#eye`} /></svg>}
-              </button>
-            </div>
-            <ErrorMessage name="password" component="div" className={css.error} />
-            <button type="submit" className={css.btn} disabled={isSubmitting}>Registration</button>
-          </Form>
-        )}
-      </Formik>
+   return (
+    <div>
+        <div className={css.modalContainer}>
+          <h2 className={css.title}>
+            Registration
+          </h2>
+          <p className={css.txt}>Thank you for your interest in our platform! In order to register, we need some information. Please provide us with the following information.</p>
+          <Formik
+            initialValues={{ name: '', email: '', password: '' }}
+            validationSchema={validationSchema}
+            onSubmit={handleSubmit}
+          >
+            {({ isSubmitting, setFieldTouched }) => (
+              <Form className={css.form}>
+                <Field type="text" name="name" placeholder="Name" className={css.name} onBlur={() => setFieldTouched('name', true)} />
+                <ErrorMessage name="name" component="div" className={css.error} />
+                <Field type="email" name="email" placeholder="Email" className={css.email} onBlur={() => setFieldTouched('email', true)} />
+                <ErrorMessage name="email" component="div" className={css.error} />
+                <div className={css.passwordContainer}>
+                  <Field type={showPassword ? "text" : "password"} name="password" placeholder="Password" className={css.password} onBlur={() => setFieldTouched('password', true)} />
+                  <button type="button" onClick={togglePasswordVisibility} className={css.togglePasswordButton}>
+                    {showPassword ? <svg className={css.svg}><use xlinkHref={`${svg}#eye-off`} /></svg> : <svg className={css.svg}><use xlinkHref={`${svg}#eye`} /></svg>}
+                  </button>
+                </div>
+                <ErrorMessage name="password" component="div" className={css.error} />
+                <button type="submit" className={css.btn} disabled={isSubmitting}>Registration</button>
+              </Form>
+            )}
+          </Formik>
+        </div>
+      )}
     </div>
   )
 }
